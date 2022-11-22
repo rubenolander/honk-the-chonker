@@ -1,8 +1,6 @@
-INSERT MANDATORY GIF
+# HONK THE CHONKER
 
-# Project Title
-
-Text about the project. This would also be a great place to link the game on Netlify.
+This will soon be a place to honk the chonker. You'll also be able to use scroll wheel to change something.
 
 # Installation
 
