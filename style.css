@@ -8,7 +8,15 @@ body {
     background-image: url("https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg");
     background-size: cover;
 }
+@keyframes chonk-rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 h1 {
     color: orchid;
-    transform:rotate(25deg);
+    animation: chonk-rotate 4s linear infinite; 
 }
