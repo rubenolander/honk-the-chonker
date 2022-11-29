@@ -5,17 +5,23 @@
     font-family: 'Erica One';
     src: url(typography/EricaOne-Regular.woff);
     src: url(typography/EricaOne-Regular.woff2);
+    letter-spacing: 0.085em;
 }
-
-body {
-    font-family: 'Erica One';
-    display: flex;
-    height: 120%;
-    justify-content: center;
-    font-size: 100px;
-    align-items: center;
-    background-image: url("https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg");
+html { 
+    background: url("https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg") no-repeat center center fixed; 
     background-size: cover;
+  }
+body{
+    height: 100%;
+    width: auto;
+    font-family: 'Erica One';
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
+    height: 100%;
 }
 @keyframes chonk-rotate {
     from{
@@ -25,8 +31,24 @@ body {
         transform: rotate(0deg);
     }
 }
+@keyframes chonk-sized {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
 h1 {
     color:var(--main-color);
     opacity: 0.16;
-    animation: chonk-rotate 8s linear infinite; 
+    animation: chonk-rotate linear 8s infinite;
+}
+/* header {
+animation: chonk-sized ease 0.1875s alternate-reverse infinite;
+} */
+footer{
+    position: absolute;
+    bottom: 0;
+    font-size: xx-small;
 }
