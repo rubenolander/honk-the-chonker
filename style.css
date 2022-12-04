@@ -3,6 +3,7 @@
   --main-color: orchid;
   --footer-color: #1d1d1d;
   font-family: 'Erica One';
+  text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
 }
 @font-face {
   src: url(typography/EricaOne-Regular.woff);
@@ -23,10 +24,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   font-size: 350%;
   user-select: none;
-  -webkit-text-stroke: 2px rgb(79, 90, 14);
-  /*   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /* -webkit-text-stroke: 2px rgb(79, 90, 14); */
+}
+img {
+    height: inherit;
 }
 
 @keyframes chonk-rotate {
@@ -45,17 +49,20 @@ main {
     transform: scale(0.5);
   }
 }
-.spinnyChonker {
+.spinny-Chonker {
   color: var(--main-color);
-  opacity: 0.16;
+  opacity: 0.6;
+  text-shadow: -2px 0 gold, 0 4px gold, 4px 0 gold, 0 -2px gold;
+
   animation: chonk-rotate linear 8s infinite;
 }
-.bouncyChonker {
+.bouncy-Chonker {
   animation: chonk-sized ease 0.1875s alternate-reverse infinite;
 }
 footer {
   position: absolute;
   bottom: 0;
+  right: 0;
   font-size: xx-small;
   color: var(--footer-color);
 }
