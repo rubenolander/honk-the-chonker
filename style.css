@@ -1,28 +1,32 @@
+/* GENERAL */
 :root {
     --main-color: orchid;
+    --footer-color: #1d1d1d;    
 }
 @font-face {
     font-family: 'Erica One';
     src: url(typography/EricaOne-Regular.woff);
     src: url(typography/EricaOne-Regular.woff2);
-    letter-spacing: 0.085em;
 }
 html { 
-    background: url("https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg") no-repeat center center fixed; 
-    background-size: cover;
-  }
+    background: url("https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg") left;
+    background-size: cover;    
+    background-repeat: no-repeat;
+}
 body{
-    height: 100%;
-    width: auto;
+    height: 98vh;
     font-family: 'Erica One';
 }
 main {
+    color: var(--footer-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 500%;
-    height: 100%;
-}
+    font-size: 350%;
+    user-select: none;
+} 
+
 @keyframes chonk-rotate {
     from{
         transform: rotate(360deg);
@@ -39,16 +43,17 @@ main {
         transform: scale(0.5);
     }
 }
-h1 {
+.spinnyChonker {
     color:var(--main-color);
     opacity: 0.16;
     animation: chonk-rotate linear 8s infinite;
 }
-/* header {
+.bouncyChonker {
 animation: chonk-sized ease 0.1875s alternate-reverse infinite;
-} */
+}
 footer{
     position: absolute;
     bottom: 0;
     font-size: xx-small;
+    color: var(--footer-color)
 }
