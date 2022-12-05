@@ -74,6 +74,9 @@ img {
 .cat-dance {
   display: none;
 }
+.doge-dance{
+  display: none;
+}
 footer {
   position: absolute;
   bottom: 0;

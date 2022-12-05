@@ -8,13 +8,20 @@
   .honk-me {
     width: fit-content;
   }
-  .cat-dance {
+  .cat-dance, .doge-dance {
     display: block;
     position: absolute;
     height: 25%;
-    bottom: 0;
-    left: 0;
+    width: 25%;
     border-radius: 40%;
     opacity: 0.5;
+  }
+  .cat-dance{
+    bottom: 0;
+    left: 0;
+  }
+  .doge-dance{
+    top: 0;
+    right: 0;
   }
 }
