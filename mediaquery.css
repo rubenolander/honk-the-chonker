@@ -1,13 +1,9 @@
 @media screen and (min-width: 769px) {
-  body {
-    height: 98vh;
-  }
   main {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 500%;
-    height: 100%;
   }
   .honk-me {
     width: fit-content;
