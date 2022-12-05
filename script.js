@@ -13,17 +13,21 @@ honk.playbackrate = 1.2;
 const flipValueArray = ['scaleX(1)', 'scaleX(-1)'];
 let i = 0;
 
-
 //Do's
 CHONKER.addEventListener('click', () => {
   song.play();
-  setTimeout(function (){
-      chonkHeader.classList.add('spinny-Chonker');
-  },6187.5)
-  setTimeout(function () {
+  setTimeout(() => {
+    chonkHeader.classList.add('spinny-Chonker');
+  }, 6187.5);
+  setTimeout(() => {
     CHONKER.classList.add('bouncy-Chonker');
   }, 11812.5);
+  setTimeout(() => {
+    chonkHeader.classList.remove('spinny-Chonker');
+    CHONKER.classList.remove('bouncy-Chonker');
+  }, 162000);
 });
+
 honkThese.forEach((honkThis) => {
   honkThis.addEventListener('click', () => {
     honk.play();

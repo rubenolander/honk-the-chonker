@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 html {
+  cursor: url('media/smolMango.png'), auto;
   height: 100%;
   min-height: 100%;
   background: url('https://images.pexels.com/photos/7135074/pexels-photo-7135074.jpeg');
@@ -74,7 +75,7 @@ img {
 .cat-dance {
   display: none;
 }
-.doge-dance{
+.doge-dance {
   display: none;
 }
 footer {
