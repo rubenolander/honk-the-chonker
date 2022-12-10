@@ -36,6 +36,10 @@ CHONKER.addEventListener('click', () => {
     chonkHeader.classList.remove('orchid-chonker');
     chonkHeader.classList.remove('spinny-Chonker');
     CHONKER.classList.remove('bouncy-Chonker');
+    topContainer.classList.remove('top-slider');
+    bottomContainer.classList.remove('bottom-slider');
+    dogeDance.classList.remove('dancer');
+    catDance.classList.remove('dancer');
   }, 162000);
 });
 
