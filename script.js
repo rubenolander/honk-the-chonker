@@ -45,7 +45,7 @@ CHONKER.addEventListener('click', () => {
 
 honkThese.forEach((honkThis) => {
   honkThis.addEventListener('click', () => {
-    honk.play();
+    honk.cloneNode().play();
   });
 });
 
