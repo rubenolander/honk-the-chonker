@@ -46,6 +46,7 @@ img {
  */
 }
 
+/* ANIMATIONS */
 @keyframes chonk-rotate {
   from {
     transform: rotate(360deg);
@@ -62,8 +63,38 @@ img {
     transform: scale(0.5);
   }
 }
-.spinny-Chonker {
+@keyframes top-slider {
+  from {
+    transform: translateY(-120%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+@keyframes bottom-slider {
+  from {
+    transform: translateY(120%);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+.first-container {
+  transform: translateY(-120%);
+}
+.second-container {
+  transform: translateY(120%);
+}
+.bottom-slider {
+  animation: bottom-slider 11.8s ease-in-out forwards;
+}
+.top-slider {
+  animation: top-slider 11.8s ease-in-out forwards;
+}
+.orchid-chonker {
   color: var(--main-color);
+}
+.spinny-Chonker {
   opacity: 0.6;
   text-shadow: -2px 0 gold, 0 4px gold, 4px 0 gold, 0 -2px gold;
 
