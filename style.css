@@ -31,9 +31,10 @@ main {
   color: var(--footer-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
+  min-height: 100%;
   font-size: 300%;
   user-select: none;
 }
@@ -42,8 +43,6 @@ h1 {
 }
 img {
   height: 100%;
-  /*   z-index: 1;
- */
 }
 
 /* ANIMATIONS */
@@ -68,7 +67,7 @@ img {
     transform: translateY(-120%);
   }
   to {
-    transform: translateY(10%);
+    transform: translateY(15%);
   }
 }
 @keyframes bottom-slider {
@@ -76,7 +75,7 @@ img {
     transform: translateY(120%);
   }
   to {
-    transform: translateY(-10%);
+    transform: translateY(-15%);
   }
 }
 .first-container {
@@ -84,6 +83,9 @@ img {
 }
 .second-container {
   transform: translateY(120%);
+}
+.top-slider, .bottom-slider{
+  height: 34%;
 }
 .bottom-slider {
   animation: bottom-slider 11.8s ease-in-out forwards;
