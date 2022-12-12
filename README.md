@@ -14,7 +14,7 @@ To have the chonkers work their badonkachonks, scroll up or down (desktop only).
 
 Visit the above link or download this repository and open the index.html file.
 # Code Review
-
+By Styrbjörn Nordberg
 1. `script.js:58-80` - a small bug: some times the bottom cat seems to lag or not detect a change in the wheel variables sometimes. it chould be a ishue on my end.
 1. `style.css:17-28` - the body and html tags dont need a min height and height of 100%, the body having a height of 100% should be enough.
 1. `index.html:29-47` - the empty sreset in the img tags are not needed as they are empty.
@@ -26,4 +26,4 @@ Visit the above link or download this repository and open the index.html file.
 Tested by the following people:
 
 1. Thomas Danielsson
-2. Styrbjörn
+2. Styrbjörn Nordberg
